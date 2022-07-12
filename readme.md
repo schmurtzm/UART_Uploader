@@ -6,6 +6,8 @@ It include a menu to guide the user and repeat actions quickly, it can be used a
 
 ![image](https://user-images.githubusercontent.com/7110113/178542715-b7706eac-8210-432f-8803-f723b1c85a86.png)
 
+The upload speed is pretty limited on serial : about 7kbit/s on 115200 serial connection (8 seconds for 50ko, 2 minutes for 1MB file).
+
 ------------------------------------------------
 **Contents:**
 * [Download](#Download)
