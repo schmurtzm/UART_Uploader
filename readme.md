@@ -8,6 +8,15 @@ It include a menu to guide the user and repeat actions quickly, it can be used a
 
 The upload speed is pretty limited on serial : about 7kbit/s on 115200 serial connection (8 seconds for 50ko, 2 minutes for 1MB file).
 
+On the Miyoo Mini we can change the speed of UART up to 230400 (more it crash uart during uploading).
+To find the current UART :
+```dmesg | grep ttyS```
+set the speed of UART :
+```stty -F /dev/ttyS0 230400```
+Nice improvement : 1 minute instead of two for 1 MB file.
+
+
+
 ------------------------------------------------
 **Contents:**
 * [Download](#Download)
