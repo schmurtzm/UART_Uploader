@@ -12,9 +12,9 @@ It include a menu to guide the user and repeat actions quickly, it can be used a
 
 * [Release Notes](#Release-Notes)
 * [Details](#Details)
-	* [How does it work ?](#How-does-it-work-?)
-	* [Alternative ways to upload a file on uart connection](#Alternative-ways-to-upload-a-file-on-uart-connection-:)
-	* [Remarks & Futur Improvements](#Remarks-&-Futur-Improvements)
+	* [How does it work ?](#how-does-it-work-=)
+	* [Alternative ways to upload a file on uart connection](#alternative-ways-to-upload-a-file-on-uart-connection-=)
+	* [Remarks & Futur Improvements](#remarks--futur-improvements-=)
 * [Credits](#Credits-:)
 * [Thanks](#Thanks)
 
@@ -43,7 +43,8 @@ You can use drag and dorop to select your source file or a file browser if you e
 Command line mode : 
 ```UART_Uploader "file_path" "folder_destination" "com_port" "serial_speed" [/r] or [/s]```
 
-            /r = 'run now' -> an upload will run immediately, you still have to press a key to close the upload Window
+            /r = 'run now' -> an upload will run immediately, 
+	    		              you still have to press a key to close the upload Window
             /s = 'silent' : no user interction, upload window is automatically killed after 5 seconds
 
 
