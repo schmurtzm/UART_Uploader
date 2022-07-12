@@ -1,7 +1,8 @@
 # UART Uploader - By Schmurtz
 
 Script for easy upload files on linux devices which have only UART (=port com = serial connection)
-It include a menu to guide the user and repeat actions quickly, it can be used as a command line utility 
+
+It include a menu to guide the user and repeat actions quickly, it can be used as a command line utility.
 
 ![image](https://user-images.githubusercontent.com/7110113/178542715-b7706eac-8210-432f-8803-f723b1c85a86.png)
 
@@ -32,15 +33,18 @@ The "normal" way to download sources on Github :
 
 ** base64 binary is required on target device ! **
 
-Usage:    
+Usage:
 
-interactive mode : 
-```UART_Uploader``` -> You will have to enter your local file path, your folder destination on th remote device the COM port and the serial speed.
+__interactive mode :__
+
+Run or double click on ```UART_Uploader``` -> You will have to enter your local file path, your folder destination on th remote device the COM port and the serial speed.
 Everything is pretty easy thanks to a menu dedicated.
-You can use drag and dorop to select your source file or a file browser if you enter the command ff on the file selection menu.
+
+You can use drag and drop to select your source file or a file browser if you enter the command ff on the file selection menu.
 
 
-Command line mode : 
+__Command line mode :__
+
 ```UART_Uploader "file_path" "folder_destination" "com_port" "serial_speed" [/r] or [/s]```
 
             /r = 'run now' -> an upload will run immediately, 
@@ -51,10 +55,17 @@ Command line mode :
 
 For help:    ```SerialSend /? ```
 
-Example:     ```UART_Uploader.bat "MyBinary" "/tmp/target directory" com3 115200 /r /s```
+Example:     ```UART_Uploader.bat "MyBinary" "/tmp/target directory" COM3 115200 /r```
 
 
-to automate multiple uploads you can do something like that 
+To automate multiple uploads you can create a .bat file :
+
+```
+UART_Uploader.bat "MyBinary_1" "/tmp" COM3 115200 /s
+timeout 7
+UART_Uploader.bat "MyBinary_2" "/tmp" COM3 115200 /s
+```
+
 
 
 
