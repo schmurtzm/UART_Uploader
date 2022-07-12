@@ -3,6 +3,7 @@
 Script for easy upload files on linux devices which have only UART (=port com = serial connection)
 It include a menu to guide the user and repeat actions quickly, it can be used as a command line utility 
 
+![image](https://user-images.githubusercontent.com/7110113/178542715-b7706eac-8210-432f-8803-f723b1c85a86.png)
 
 ------------------------------------------------
 **Contents:**
@@ -13,8 +14,8 @@ It include a menu to guide the user and repeat actions quickly, it can be used a
 * [Details](#Details)
 	* [How does it work ?](#How-does-it-work-?)
 	* [Alternative ways to upload a file on uart connection](#Alternative-ways-to-upload-a-file-on-uart-connection-:)
-	* [Remarks & Futur Improvements](#Remarks-&-Futur-Improvements-:)
-* [Credits](#Credits)
+	* [Remarks & Futur Improvements](#Remarks-&-Futur-Improvements)
+* [Credits](#Credits-:)
 * [Thanks](#Thanks)
 
 ------------------------------------------------
@@ -99,10 +100,10 @@ In case you don't have base64 utility on the target linux device, you could repl
  [This stack stackexchange post from ilkkachu](https://unix.stackexchange.com/a/356762) which inspirate the creation of this script ! 
  
  Some binaries for batch which are used in this script :
- nircmd & nircmdc from nirsoft to manage windows.
- EchoX from [Bill Stewart](https://westmesatech.com/?page_id=26) to add easily some colors in the menu
- base64 from [DI Management](https://www.di-mgt.com.au/base64-for-windows.html) to encode in base64 on Windows
- [PuTTY & plink](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+ - nircmd & nircmdc from nirsoft to manage windows.
+ - EchoX from [Bill Stewart](https://westmesatech.com/?page_id=26) to add easily some colors in the menu
+ - base64 from [DI Management](https://www.di-mgt.com.au/base64-for-windows.html) to encode in base64 on Windows
+ - [PuTTY & plink](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
  ## Thanks
   
