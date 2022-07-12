@@ -12,10 +12,10 @@ It include a menu to guide the user and repeat actions quickly, it can be used a
 
 * [Release Notes](#Release-Notes)
 * [Details](#Details)
-	* [How does it work ?](#how-does-it-work-=)
-	* [Alternative ways to upload a file on uart connection](#alternative-ways-to-upload-a-file-on-uart-connection-=)
-	* [Remarks & Futur Improvements](#remarks--futur-improvements-=)
-* [Credits](#Credits-:)
+	* How does it work ?
+	* Alternative ways to upload a file on uart connection
+	* Remarks & Futur Improvements
+* [Credits](#credits-)
 * [Thanks](#Thanks)
 
 ------------------------------------------------
