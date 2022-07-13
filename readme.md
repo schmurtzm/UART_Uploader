@@ -100,6 +100,7 @@ sudo apt remove brltty
 __Command line mode :__
 
 Edit the script to modify target directory and port com settings and then run it :
+
 ```sh ./UART_Uploader.sh "file_path"```
 
 
