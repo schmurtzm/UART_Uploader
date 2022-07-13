@@ -1,4 +1,0 @@
-echo
-cd "/tmp"
-echo -e "\r\n\r\n\r\n"
-cat "tri-dossiers- alpha.bat"
