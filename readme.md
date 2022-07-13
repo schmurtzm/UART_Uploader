@@ -2,7 +2,9 @@
 
 Script for easy upload files on linux devices which have only UART (=port com = serial connection)
 
-It include a menu to guide the user and repeat actions quickly, it can be used as a command line utility.
+For Windows it include a menu to guide the user and repeat actions quickly, it can be used as a command line utility.
+
+The linux script is more basic but easy to use too.
 
 ![image](https://user-images.githubusercontent.com/7110113/178542715-b7706eac-8210-432f-8803-f723b1c85a86.png)
 
@@ -44,7 +46,7 @@ The "normal" way to download sources on Github :
 
 ** base64 binary is required on target device ! **
 
-Usage:
+#### Usage for Windows script :
 
 __interactive mode :__
 
@@ -77,8 +79,29 @@ timeout 7
 UART_Uploader.bat "MyBinary_2" "/tmp" COM3 115200 /s
 ```
 
+#### Usage for Linux script :
 
+Install putty and plink :
+```
+sudo apt install putty
+sudo apt install putty-tools
+```
 
+Locate your COM port :
+```
+dmesg | grep tty
+```
+
+Try to connect with putty, if you don't see COM port on Ubuntu 22.04 :
+```
+sudo apt remove brltty 
+```
+
+__Command line mode :__
+
+```sh ./UART_Uploader.sh "file_path"```
+
+Edit the script to modify target directory and port com settings.
 
 ------------------------------------------------
  
@@ -114,7 +137,7 @@ In case you don't have base64 utility on the target linux device, you could repl
 
 #### Remarks & Futur Improvements :
 - A difficulty is to know when plink has finished its upload. There's nothing easy to detect that. On my linux device I wasn't able to reset uart connection. So that's why I ask to the user to close plink himself when the upload is terminated.
-- A similar script in shell for linux.
+- A similar script in shell for linux with menu included.
 - A version of the script which support missing base64 binary on the target device [see here](https://gist.github.com/markusfisch/2648733).
 
 ------------------------------------------------
